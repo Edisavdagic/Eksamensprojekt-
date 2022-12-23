@@ -1,0 +1,1163 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  /* font montserrat*/
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* NAVIGATIONS MENU */
+nav {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #578CC1;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+
+
+}
+
+.logo {
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+  flex-wrap: nowrap;
+}
+
+@media only screen and (min-width: 600px) {
+  .logo {
+    font-size: 20px;
+    
+  }
+
+
+
+}
+
+.fordelinglogo {
+  color: #FFFFFF;
+}
+
+ul.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation li {
+  margin-right: 14px;
+}
+
+.navigation li:last-of-type {
+  margin-right: 0;
+}
+
+.navigation li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+/* Main */
+main {
+  max-width: 100%;
+  height: 100%;
+}
+
+/* FORSIDE BILLEDE MED BILLEDE */
+.section1 {
+  background-image: url("images/forside/background.jpg");
+  background-position: center;
+  /* background center*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 20px 320px 20px;
+  top: 100px;
+  position: relative;
+}
+
+.titel{
+font-size: 50px;
+color: white;
+
+  
+}
+
+
+
+.slogan {
+  font-size: 25px;
+  font-weight: normal;
+  color: #FFFFFF;
+  
+}
+
+.paragraf1 {
+  padding-top: 15px;
+  font-size: 16px;
+  max-width: 300px;
+  color: #FFFFFF;
+  font-weight: normal;
+
+ 
+}
+
+.mitportraet {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-height: 400px;
+  width: auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .mitportraet {
+    max-height: 450px;
+
+  }
+
+  .slogan  {
+    max-width: 600px;
+    font-size: 25px;
+  }
+  .paragraf1{
+    max-width: 800px;
+
+  }
+  .navigation li a {
+    font-size: 18px;
+
+
+
+  }
+
+}
+
+@media only screen and (min-width: 1100px) {
+  nav {
+    padding: 0 40px;
+  }
+
+  .navigation li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  
+  }
+
+  .logo{
+    font-size: 30px;
+
+
+
+  }
+  .mitportraet {
+    max-height: 650px;
+    padding-top: 90px;
+  }
+
+  .slogan {
+    max-width: 600px;
+    font-size: 35px;
+    padding: 0 0 0 5px;
+
+  }
+
+  .paragraf1 {
+    max-width: 600px;
+    font-size: 16px;
+  }
+
+  .section1 {
+    padding: 150px 90px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .section2{
+    padding: 0px 50px;
+  }
+}
+
+/* FORSIDE UNDER SELVPORTRÆT BILLEDE */
+.section2 {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-color: #FFFFFF;
+  
+}
+
+.paragraf2 {
+  font-size: 16px;
+  margin-top: 50px;
+
+}
+
+.knap {
+  color: white;
+  background-color: #578CC1;
+  font-weight: bold;
+  border-radius: 30px;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  border: none;
+  cursor:pointer;
+  
+ 
+}
+
+
+
+
+.kompetencer {
+  width: 100%;
+  background-color: #B1C5DE;
+  text-align: center;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px
+
+}
+
+
+
+.kompetencer .title h2 {
+  color: #000000;
+  font-size: 30px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin-top: 50px;
+}
+
+
+.kompetencer .flex-container {
+  gap: 35px;
+  
+}
+
+.kompetencer2 .flex-container {
+  gap: 10px;
+}
+
+.kompetencer .flex-container .skill img {
+  width: 100px;
+  height: auto;
+}
+
+.kompetencer2{
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #FFFFFF;
+  text-align: center;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  
+
+}
+
+.kompetencer2 .flex-container .vaerker:hover{
+  background-color: #578CC1;
+  z-index: 2;
+
+}
+
+.kompetencer2 .title2{
+   margin: 0 200px;
+}
+.titel-mineværker{
+  font-size: 30px;
+}
+
+
+.kompetencer2 .flex-container .vaerker{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c0c4c9;
+
+  
+  
+}
+
+.kompetencer2 .flex-container .vaerker img {
+  width: 200px;
+  height: 300px;
+
+}
+
+
+footer{
+background-color: #578CC1;
+padding-top: 25px;
+padding-bottom: 25px;
+font-size: 15px;
+}
+
+
+
+footer .footerindhold li, footer .footerindhold li a{
+color: white;
+text-align: center;
+font-weight: bold;
+text-decoration: none;
+
+}
+/* ----------------------------------------------------------OM MIG SIDEN------------------------------------------------------------ */
+.ommig-section1{
+background-color: #FFFFFF;
+padding: 0px 20px 20px 20px;
+width: 100%;
+margin-top: 25px;
+
+}
+
+
+.ommig-container{
+width: 100%;
+padding-top: 100px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.ommig-billede img{
+height: 40svh;
+width: 40vh;
+border: solid grey;
+object-fit: cover;
+}
+
+.ommig-indhold{ 
+font-size: 16px;
+padding-bottom: 25px;
+
+}
+.ommig-indhold h2{
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 25px;
+
+
+}
+
+
+
+
+.ommig-section2{
+  background-color: #B1C5DE;
+  padding: 5px 20px 10px 20px;
+  width: 100%;  
+  }
+
+  .ommig-container2{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    flex-direction: column-reverse;
+   
+    }
+    
+    .ommig-billede2 img{
+    height: 40vh;
+    width: 40vh;
+    border: solid grey;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .ommig-indhold2{
+    font-size: 16px;
+    padding-top: 0px;
+    color: #000000;
+    padding-bottom: 25px;
+
+  
+   }
+
+    .ommig-indhold2 h2{
+      font-size: 30px;
+      justify-content: center;
+      text-align: center;
+      color: #000000;
+      font-weight: bold;
+      padding-bottom: 25px;
+    }
+      .ommig-section3{
+      background-color: #FFFFFF;
+
+      padding-bottom: 50px;
+
+      }
+  
+
+    @media only screen and (min-width: 1100px){
+      nav {
+        padding: 0 40px;
+      }
+    
+      .navigation li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+      
+      }
+
+      .ommig-section1{
+        background-color: #FFFFFF;
+        padding: 0px 20px 20px 20px;
+        width: 100%;
+        margin-bottom: -50px;
+        
+        }
+      .ommig-container{
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        display: flex;
+        gap: 50px;
+        flex-direction: row;
+        }
+        .ommig-indhold{ 
+          font-size: 16px;
+          padding-top: 50px;
+          }
+
+          .ommig-indhold h2{
+          font-size: 30px;
+          justify-content: center;
+          text-align: center;
+          }
+
+     
+          .ommig-container2{
+            width: 100%;
+            gap: 50px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            
+            }
+
+            .ommig-indhold2{ 
+              font-size: 16px;
+              padding-top: 50px;
+              }
+              .ommig-section2{
+                background-color: #B1C5DE;
+                width: 100%; 
+                }
+        
+            }
+
+
+
+
+
+
+ /* ----------------------------------------------------------Portfolie------------------------------------------------------------ */
+
+ .section2-portfolie{
+  background-color: #FFFFFF;
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+
+  }
+
+
+
+  .titel-portfolie{
+    color: #000000;
+    padding-top: 50px;;
+    text-align: center;
+    padding-bottom: 25px;
+  
+
+ }
+
+ .paragraf-portfolie{
+  text-align: center;
+  justify-content: center;
+ }
+
+ .tjek-portfolie{
+  background-color: #578CC1;
+  color: white;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+ }
+ 
+ 
+
+ .portfolie-container{
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  background-color: #FFFFFF;
+  text-align: center;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 50px;
+
+
+
+
+
+ }
+
+ .portfolie-container .portfolie img{
+  width: 250px;
+  height: 400px;
+
+
+
+
+ }
+
+ @media only screen and (min-width: 1100px){
+  .portfolie-container{
+    width: 100%;
+    padding-bottom: 50px;
+    background-color: #FFFFFF;
+    text-align: center;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+
+
+
+
+   }
+
+   .portfolie-container .portfolie img{
+    width: 250px;
+    height: 400px;
+  
+
+
+
+   }
+  }
+
+
+  @media only screen and (min-width: 600px){
+    .portfolie-container{
+    width: 100%;
+    padding-bottom: 50px;
+    background-color: #FFFFFF;
+    text-align: center;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+   }
+  }
+
+
+
+
+
+
+
+/* -----------------------------------------------------VÆRKER 1 SIDE-------------------------------------------------------- */
+
+
+
+    .section-vaerker1{
+    background-color: #FFFFFF;
+    padding-top: 100px;
+    }
+
+    .titel-vaerker1{
+      color: #000000;
+      padding-top: 50px;;
+      text-align: center;
+      padding-bottom: 25px;
+   }
+
+   .paragraf-vaerker1{
+    text-align: center;
+    justify-content: center;
+   }
+
+   .tjek-prototype{
+    background-color: #578CC1;
+    color: white;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+   }
+
+   .div-knap{
+    padding-top: 25px;
+    text-align: center;
+   }
+
+   .vaerker1-container{
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    background-color: #FFFFFF;
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 50px;
+
+
+
+
+
+   }
+
+   .vaerker1-container .vaerker1 img{
+    width: 300px;
+    height: 600px;
+   }
+
+   @media only screen and (min-width: 1100px){
+
+    .vaerker1-container{
+      width: 100%;
+      padding-bottom: 50px;
+      background-color: #FFFFFF;
+      text-align: center;
+      display: flex; 
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+     }
+  
+     .vaerker1-container .vaerker1 img{
+      width: 400px;
+      height: 600px;
+     }
+    }
+    
+    @media only screen and (min-width: 600px){
+      .vaerker1-container{
+      width: 100%;
+      padding-bottom: 50px;
+      background-color: #FFFFFF;
+      text-align: center;
+      display: flex; 
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+     }
+    }
+
+
+
+
+    /* ---------------------------------------------VÆRKER 2 SIDE------------------------------------------------------------ */
+    .section-vaerker2{
+      background-color: #FFFFFF;
+      padding-top: 100px;
+  
+  
+      }
+  
+  
+  
+      .titel-vaerker2{
+        color: #000000;
+        padding-top: 50px;;
+        text-align: center;
+        padding-bottom: 25px;
+  
+     }
+    
+     .paragraf-vaerker2{
+      text-align: center;
+      justify-content: center;
+     }
+  
+     .tjek-prototype{
+      background-color: #578CC1;
+      color: white;
+      border-radius: 30px;
+      font-size: 15px;
+      font-weight: bold;
+      padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+     }
+     .div-knap2{
+      padding-top: 25px;
+      text-align: center;
+     }
+  
+     
+  
+     .vaerker2-container{
+      width: 100%;
+      padding-top: 25px;
+      padding-bottom: 50px;
+      background-color: #FFFFFF;
+      text-align: center;
+      display: flex; 
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 50px;
+  
+  
+  
+  
+  
+     }
+  
+     .vaerker2-container .vaerker2 img{
+      width: 300px;
+      height: 600px;
+    
+  
+  
+  
+     }
+  
+     @media only screen and (min-width: 1100px){
+      .vaerker2-container{
+        width: 100%;
+        padding-bottom: 50px;
+        background-color: #FFFFFF;
+        text-align: center;
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+    
+    
+    
+       }
+    
+       .vaerker2-container .vaerker2 img{
+        width: 400px;
+        height: 600px;
+      
+    
+    
+    
+       }
+      }
+  
+  
+      @media only screen and (min-width: 600px){
+        .vaerker2-container{
+        width: 100%;
+        padding-bottom: 50px;
+        background-color: #FFFFFF;
+        text-align: center;
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+  
+       }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* -----------------------------------------------VÆRKER 3 SIDE------------------------------------------------------------ */
+
+
+
+  .section-vaerker3{
+    background-color: #FFFFFF;
+    padding-top: 100px;
+
+
+    }
+
+    .titel-vaerker3{
+      color: #000000;
+      padding-top: 50px;;
+      text-align: center;
+      padding-bottom: 25px;
+
+   }
+  
+   .paragraf-vaerker3{
+    text-align: center;
+    justify-content: center;
+   }
+
+   .vaerker3-container{
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    background-color: #FFFFFF;
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 50px;
+
+
+
+
+
+   }
+
+   .vaerker3-container .vaerker3 img{
+    width: 300px;
+    height: 600px;
+  
+
+
+
+   }
+
+   @media only screen and (min-width: 1100px){
+    .vaerker3-container{
+      width: 100%;
+      padding-bottom: 50px;
+      background-color: #FFFFFF;
+      text-align: center;
+      display: flex; 
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  
+  
+  
+  
+     }
+  
+     .vaerker3-container .vaerker3 img{
+      width: 400px;
+      height: 600px;
+    
+  
+  
+  
+     }
+    }
+
+
+    @media only screen and (min-width: 600px){
+      .vaerker3-container{
+      width: 100%;
+      padding-bottom: 50px;
+      background-color: #FFFFFF;
+      text-align: center;
+      display: flex; 
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+     }
+    }
+
+
+    /* ---------------------------------------------VÆRKER 4 SIDE------------------------------------------------------------ */
+
+
+    .section-vaerker4{
+      padding-top: 100px;
+
+  
+  
+      }
+  
+      .titel-vaerker4{
+        color: #000000;
+        padding-top: 50px;;
+        text-align: center;
+        padding-bottom: 25px;
+  
+     }
+    
+     .paragraf-vaerker4{
+      text-align: center;
+      justify-content: center;
+     }
+  
+     .vaerker4-container{
+      width: 100%;
+      padding-top: 25px;
+      padding-bottom: 50px;
+      background-color: #FFFFFF;
+      text-align: center;
+      display: flex; 
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 50px;
+     }
+  
+     .vaerker4-container .vaerker4 img{
+      width: 300px;
+      height: 600px;
+    
+  
+  
+  
+     }
+  
+     @media only screen and (min-width: 1100px){
+      .vaerker4-container{
+        width: 100%;
+        padding-bottom: 50px;
+        background-color: #FFFFFF;
+        text-align: center;
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+    
+    
+    
+       }
+    
+       .vaerker4-container .vaerker4 img{
+        width: 400px;
+        height: 600px;
+      
+    
+    
+    
+       }
+      }
+  
+  
+      @media only screen and (min-width: 600px){
+        .vaerker4-container{
+        width: 100%;
+        padding-bottom: 50px;
+        background-color: #FFFFFF;
+        text-align: center;
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+  
+       }
+      }
+
+
+
+      /* -------------------------------------------VÆRKER 5 SIDE------------------------------------------------------------ */
+
+
+    .section-vaerker5{
+      padding-top: 100px;
+
+  
+  
+      }
+  
+      .titel-vaerker5{
+        color: #000000;
+        padding-top: 50px;;
+        text-align: center;
+        padding-bottom: 25px;
+  
+     }
+    
+     .paragraf-vaerker5{
+      text-align: center;
+      justify-content: center;
+     }
+  
+     .vaerker5-container{
+      width: 100%;
+      padding-top: 25px;
+      padding-bottom: 50px;
+      background-color: #FFFFFF;
+      text-align: center;
+      display: flex; 
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 50px;
+     }
+  
+     .vaerker5-container .vaerker5 img{
+      width: 300px;
+      height: 600px;
+    
+  
+  
+  
+     }
+  
+     @media only screen and (min-width: 1100px){
+      .vaerker5-container{
+        width: 100%;
+        padding-bottom: 50px;
+        background-color: #FFFFFF;
+        text-align: center;
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+    
+    
+    
+       }
+    
+       .vaerker5-container .vaerker5 img{
+        width: 400px;
+        height: 600px;
+      
+    
+    
+    
+       }
+      }
+  
+  
+      @media only screen and (min-width: 600px){
+        .vaerker5-container{
+        width: 100%;
+        padding-bottom: 50px;
+        background-color: #FFFFFF;
+        text-align: center;
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+  
+       }
+      }
+
+/* --------------------------------------------------------KONTAKT SIDE--------------------------------------------------------------- */
+
+.main-kontakt{
+height: 90%;
+}
+
+.kontakt-container{
+padding-top: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Montserrat', sans-serif;
+padding-bottom: 175px;
+}
+
+.kontakt-container form{
+width: 670px;
+height: 400px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.kontakt-container h1{
+font-weight: bold;
+text-align: center;
+}
+
+.kontakt-container p{
+  padding-top: 25px;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 25px;
+  }
+
+.kontakt-container form input{
+width: 290px;
+height: 40px;
+padding-left: 10px;
+font-size: 16px;
+
+
+
+}
+
+
+.kontakt-container form input::placeholder{
+background-color: #FFFFFF;
+
+
+
+}
+
+.kontakt-container form textarea{
+width:100%;
+height: 50%;
+font-family: 'Montserrat', sans-serif;
+
+}
+
